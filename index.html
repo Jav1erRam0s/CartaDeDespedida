@@ -1,11 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.png" type="image/x-icon">
+    <title>Egresados 2026</title>
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- Google Fonts -->
+    <!-- Chakra Petch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Quantico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Caesar Dressing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Animate CSS v4.1.1 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+  </head>
+
+  <body class="quantico-regular">
+    <!-- HEADER -->
+    <section id="header">
+      <div class="row m-0 h-100">
+        <div class="col-3 offset-9 col-md-4 offset-md-8 col-lg-4 offset-lg-8 d-flex align-items-center" >
+          <legend id="leyenda" class="d-none d-md-block d-lg-block">ALL WE NEED IS LOVE</legend>
+          <legend id="leyenda-sm" class="d-block d-md-none d-lg-none">
+            <p>ALL</p>
+            <p>WE</p>
+            <p>NEED</p>
+            <p>IS</p>
+            <p>LOVE</p>
+          </legend>
+        </div>
+      </div>
+    </section>
+
     
-</body>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar sticky-top bg-dark navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid p-0">
+        <div class="container-navbar-brand">
+          <a class="navbar-brand" href="#header" style="height: 40px;">
+            <img src="./assets/images/navbar/avatar.png" alt="avatar" width="30" height="auto" class="d-inline-block align-text-top">
+            <span class="caesar-dressing-regular" style="margin: 10px">El Canserbero</span>
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end gap-lg-4 gap-md-1 gap-sm-0">
+            <li class="nav-item">
+              <img src="./assets/images/navbar/biografia.png"/>
+              <a class="nav-link" href="#biografia">Biografía</a>
+            </li>
+            <li class="nav-item">
+              <img src="./assets/images/navbar/musica.png"/>
+              <a class="nav-link" href="#musica">Música</a>
+            </li>
+            <li class="nav-item">
+              <img src="./assets/images/navbar/documental.png"/>
+              <a class="nav-link" href="#documental">Documental</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- MAIN -->
+    <main id="main">
+
+
+      <!-- PRESENTACION -->
+      <section id="presentacion">
+        <div class="row m-0 h-100">
+          <div class="col-10 col-md-4 col-lg-4 d-flex align-items-center">
+            <div class="poesia">
+              <p class="timer-verse-1 animate__animated animate__flipInX">“...Hace falta valor, y no lo digo por rimar</p>
+              <p class="timer-verse-2 animate__animated animate__flipInX">Porque rimar no es don, como si lo es con corazón rimar</p>
+              <p class="timer-verse-3 animate__animated animate__flipInX">Me tendrán que matar, pa’ que no escriba más pasajes</p>
+              <p class="timer-verse-4 animate__animated animate__flipInX" style="margin: 0;">Aunque habrán matado al mensajero pero no al mensaje...”</p>
+              <p class="timer-author-5 animate__animated animate__flipInX quantico-bold titleApp float-start">El Can, Un día en el barrio 2012.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- VIDEO -->
+      <section id="video">
+        <iframe 
+          width="560" 
+          height="315" 
+          src="assets/videos/demos.mp4" 
+          title="Reproductor de video" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        ></iframe>
+      </section>
+
+
+      <!-- DOCUMENTAL -->
+      <section id="documental">
+        <div class="title-section caesar-dressing-regular">Documental</div>
+
+        <p class="documental-info"><span class="quantico-bold">#1 El origen</span> - Relata la infancia de Tirone González antes de convertirse en un reconocido referente del rap latinoamericano bajo el pseudónimo de Canserbero.</p>
+        <p class="documental-info"><span class="quantico-bold">#2 Los blancos no rapean</span> - Revelamos las impresiones de los amigos y conocidos más cercanos de Tirone González, quienes notaron en él una gran habilidad para las rimas, los versos y el freestyle. </p>
+        <p class="documental-info"><span class="quantico-bold">#3 All we need is love</span> - Revive momentos decisivos que moldearon la forma y personalidad de Canserbero como alter ego. A su vez, rememora anécdotas sentimentales con sus amores formales que inspiraron sus letras románticas en una escena del rap donde ser underground era la regla.</p>
+        <p class="documental-info"><span class="quantico-bold">#4 Ni más, ni menos</span> - Conocerás cómo Tirone González emergió de un sector popular de Maracay para convertirse en una leyenda del rap hispanoamericano.</p>
+
+        <div id="carousel-documental" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="align-carousel-items">
+                <div class="card-video">
+                  <iframe class="documental-video"
+                    src="https://www.youtube.com/embed/s5LWkkRoHrg">
+                  </iframe>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-7 col-lg-6 info-card-video">🎬 #1 El origen</div>
+                      <div class="col-5 col-lg-6 info-card-video">⏰ 53:48 min</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="align-carousel-items">
+                <div class="card-video">
+                  <iframe class="documental-video"
+                    src="https://www.youtube.com/embed/K4z0keo3SKY">
+                  </iframe>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-7 col-lg-6 info-card-video">🎬 #2 Los blancos no rapean</div>
+                      <div class="col-5 col-lg-6 info-card-video">⏰ 54:36 min</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="align-carousel-items">
+                <div class="card-video">
+                  <iframe class="documental-video"
+                    src="https://www.youtube.com/embed/n7uPx0TGzeo">
+                  </iframe>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-7 col-lg-6 info-card-video">🎬 #3 All we need is love</div>
+                      <div class="col-5 col-lg-6 info-card-video">⏰ 54:52 min</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="align-carousel-items">
+                <div class="card-video">
+                  <iframe class="documental-video"
+                    src="https://www.youtube.com/embed/81CeXLWdLxg">
+                  </iframe>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-7 col-lg-6 info-card-video">🎬 #4 Ni más, ni menos</div>
+                      <div class="col-5 col-lg-6 info-card-video">⏰ 53:31 min</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-documental" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-documental" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="https://terabox.com/s/1zxsA6SkffRyZMlPSonCN8g" target="_blank" style="font-size: 15px;" class="btn-download-documental btn btn-primary">
+            <img class="img-descargar-documental" src="./assets/images/documental/terabox.png" alt="terabox">
+            Descargar
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <span class="caesar-dressing-regular mx-1">El Canserbero</span><span id="anio-footer" class="mx-1"></span>©<span class="mx-1">All Rights Reserved</span>
+    </footer>
+    
+    <!-- JQuery v3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!-- Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="./js/settings.js"></script>
+    <script src="./js/render.js"></script>
+    <script src="./js/actions.js"></script>
+  </body>
 </html>

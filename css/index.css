@@ -1,0 +1,925 @@
+/* ************************************************** */
+/* NORMALIZACION */
+/* ************************************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ************************************************** */
+/* DEFINICION DE VARIABLES */
+/* ************************************************** */
+
+:root {
+  /* GENERAL */
+  --scroll-bar-color: olivedrab;
+  --scroll-background: #212529;
+
+  /* DEFAULT */
+  --default-font-color: whitesmoke;
+  --default-background-color: #0f0d11;
+  --default-background-main: olivedrab;
+
+  /* MÚSICA */
+  --button-download-hover: #475f17;
+  --reproductor: #2a311c;
+  
+  /* NAVBAR */
+  --button-toggler-border: olivedrab;
+
+  /* FOOTER */
+  --default-color-dark-background: #212529;
+}
+
+/* ************************************************** */
+/* GOOGLE FONTS */
+/* ************************************************** */
+
+/* Chakra Petch */
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Caesar Dressing */
+.caesar-dressing-regular {
+  font-family: "Caesar Dressing", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Quantico */
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ************************************************** */
+/* MEDIA QUERIES */
+/* ************************************************** */
+
+/* For MOBILES */
+@media (max-width: 767px) {
+  /* NAVBAR */
+
+  #navbar {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* PRESENTACION */
+
+  #presentacion {
+    height: calc(100vh - 150px - 56px - 56px) !important;
+  }
+
+  .poesia {
+    font-size: 12px !important;
+
+    padding-left: 10px !important;
+    padding-right: 25px !important;
+  }
+
+  /* BIOGRAFIA */
+
+  #biografia {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .container-carousel {
+    /* height: calc(100vh - 56px  - 56px) !important; */
+    height: 550px !important;
+  }
+
+  .biografia-title {
+    font-size: 13px !important;
+  }
+
+  .biografia-info {
+    font-size: 13px !important;
+  }
+
+  /* MUSICA */
+
+  #musica {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .container-musica {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  .loader-card-musica{
+    border-radius: 10px !important;
+  }
+  
+  .card-musica {
+    font-size: 13px !important;
+    border-radius: 10px !important;
+  }
+
+  /* MODAL */
+
+  #modalAlbum {
+    font-size: 13px !important;
+  }
+
+  #modal-name {
+    font-size: 16px !important;
+  }
+
+  .img-descargar-musica {
+    width: 21px !important;
+  }
+
+  /* DOCUMENTAL */
+
+  #documental {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .documental-info {
+    font-size: 13px !important;
+  }
+
+  #carousel-documental {
+    margin-top: 20px !important;
+  }
+
+  .card-video {
+    width: 100% !important;
+    border-radius: 10px !important;
+    border: inset 2px var(--default-background-main) !important;
+  }
+
+  .info-card-video {
+    font-size: 13px !important;
+  }
+
+  .btn-download-documental {
+    width: 100% !important;
+    margin-bottom: 60px !important;
+
+    font-size: 13px !important;
+  }
+
+  .img-descargar-documental {
+    width: 21px !important;
+    margin-right: 8px !important;
+  }
+
+  /* FOOTER */
+
+  #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 14px !important;
+  }
+}
+
+/* For TABLETS */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* HEADER */
+
+  #leyenda {
+    font-size: 15px !important;
+  }
+
+  /* NAVBAR */
+
+  #navbar {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
+  /* PRESENTACION */
+
+  .poesia {
+    font-size: 13px !important;
+
+    padding-left: 15px !important;
+    padding-right: 20px !important;
+  }
+
+  /* BIOGRAFIA */
+
+  #biografia {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .container-carousel {
+    height: auto !important;
+  }
+
+  .biografia-title {
+    font-size: 14px !important;
+  }
+
+  .biografia-info {
+    font-size: 14px !important;
+  }
+
+  /* MUSICA */
+
+  #musica {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .container-musica {
+    gap: 30px !important;
+  }
+
+  .card-musica {
+    font-size: 14px !important;
+  }
+
+  /* MODAL */
+
+  #modalAlbum {
+    font-size: 14px !important;
+  }
+
+  #modal-name {
+    font-size: 17px !important;
+  }
+
+  .img-descargar-musica {
+    width: 23px !important;
+  }
+
+  /* DOCUMENTAL */
+
+  #documental {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .documental-info {
+    font-size: 14px !important;
+  }
+
+  .card-video {
+    width: 80% !important;
+  }
+
+  .info-card-video {
+    font-size: 14px !important;
+  }
+
+  .img-descargar-documental {
+    width: 23px !important;
+  }
+
+  .btn-download-documental {
+    font-size: 14px !important;
+    width: 80% !important;
+  }
+
+  /* FOOTER */
+
+  #footer {
+    font-size: 15px !important;
+  }
+}
+
+/* ************************************************** */
+/* ESTILOS DEFAULT ( ESCRITORIO ) */
+/* ************************************************** */
+
+html {
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-background);
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#header {
+  width: 100%;
+  height: 150px;
+
+  background-image: url("../assets/images/header/portada.jpg");
+  background-size: cover;
+  background-position: 0% 25%;
+}
+
+#leyenda {
+  color: var(--default-font-color);
+  font-size: 20px;
+
+  text-align: center;
+  margin-bottom: 0;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#leyenda-sm {
+  color: var(--default-font-color);
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+#leyenda-sm p {
+  margin: 0;
+}
+
+/* NAVBAR */
+
+#navbar {
+  position: sticky;
+  top: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.nav-item img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.nav-item a {
+  display: inline-block;
+  font-size: 15px;
+
+  height: 40px;
+  align-content: center;
+}
+
+.nav-item a:hover {
+  color: var(--default-background-main) !important;
+}
+
+/*
+a[href="#biografia"]:hover {
+  color: #fff40a !important;
+}
+a[href="#musica"]:hover {
+  color: #0663e6 !important;
+}
+a[href="#documental"]:hover {
+  color: #f00003 !important;
+}
+*/
+
+.navbar-toggler {
+  border: 1px solid var(--button-toggler-border) !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/* PRESENTACION */
+
+#presentacion {
+  height: calc(100vh - 150px - 56px);
+
+  background-image: url("../assets/images/presentacion/presentacion.png");
+  background-size: cover;
+  background-position: 0% 18%;
+}
+
+.poesia {
+  color: var(--default-font-color);
+  font-size: 14px;
+
+  padding-left: 30px;
+  padding-right: 60px;
+  text-align: justify;
+}
+
+.timer-verse-1 {
+  animation-duration: 5s !important;
+}
+
+.timer-verse-2 {
+  animation-duration: 10s !important;
+}
+
+.timer-verse-3 {
+  animation-duration: 15s !important;
+}
+
+.timer-verse-4 {
+  animation-duration: 20s !important;
+}
+
+.timer-author-5 {
+  animation-duration: 25s !important;
+  color: var(--default-background-main) !important;
+}
+
+.titleApp {
+  color: var(--default-font-color);
+
+  margin-top: 35px;
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.title-section {
+  margin-bottom: 20px;
+}
+
+/* BIOGRAFIA */
+
+#biografia {
+  color: var(--default-background-color);
+  background-color: var(--default-font-color);
+
+  padding-left: 100px;
+  padding-right: 100px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-img-biografia {
+  position: relative;
+  overflow: hidden;
+
+  width: 90%;
+  aspect-ratio: 250 / 350;
+  
+  border-radius: 15px;
+  border: inset 3px var(--default-background-main);
+
+  background-color: var(--default-color-dark-background);
+  background-image: url("../assets/images/musica/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+.container-img-biografia img {
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.indicators-biografia {
+  position: relative !important;
+  margin-bottom: 0 !important;
+  z-index: 0 !important;
+}
+
+.indicators-biografia button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  background-color: var(--default-background-main) !important;
+}
+
+.biografia-title {
+  font-size: 15px;
+}
+
+.biografia-info {
+  font-size: 15px;
+  text-align: justify;
+}
+
+/* MUSICA */
+
+#musica {
+  background-color: var(--default-background-color);
+  color: var(--default-font-color);
+
+  padding-left: 100px;
+  padding-right: 100px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.indicators-musica {
+  position: relative !important;
+  margin-top: 20px;
+  margin-bottom: 0 !important;
+  z-index: 0 !important;
+}
+
+.indicators-musica button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+}
+
+.container-musica {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px; /* Espacio entre las columnas */
+}
+
+.loader-card-musica{
+  border-radius: 15px;
+
+  background-color: var(--default-color-dark-background);
+
+  background-image: url("../assets/images/musica/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+.card-musica {
+  font-size: 15px;
+  background-color: var(--reproductor);
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 15px;
+}
+
+.card-nombre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+
+  height: 40px;
+  color: var(--default-font-color);
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  aspect-ratio: 1 / 1;
+
+  background-color: var(--default-color-dark-background);
+  background-image: url("../assets/images/musica/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+.card-image img:hover {
+  transition: transform 0.7s;
+  transform: scale(1.05);
+}
+
+.track-played {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 100%;
+  height: 20%;
+
+  bottom: 0;
+  left: 0;
+
+  color: var(--default-font-color);
+
+  background: linear-gradient(
+    0deg,
+    rgba(42, 48, 28, 1) 0%,
+    rgba(42, 49, 28, 0) 100%
+  );
+}
+
+#texto-mp3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simbol-music {
+  color: var(--default-font-color);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#txt-music {
+  color: var(--default-font-color);
+}
+
+/* Alternativa marquee */
+
+.alt-marquee {
+  overflow: hidden;
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+
+  /* for Firefox */
+  mask-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  /* for Chrome */
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 30%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.alt-marquee span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
+
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+
+  /* Apply animation to this element */
+  -moz-animation: alt-marquee 10s linear infinite;
+  -webkit-animation: alt-marquee 10s linear infinite;
+  animation: alt-marquee 10s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes alt-marquee {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes alt-marquee {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes alt-marquee {
+  0% {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+.card-tracks {
+  height: 120px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.card-tracks ol li:hover {
+  background-color: var(--default-color-dark-background);
+  color: var(--default-font-color);
+}
+
+.card-reproductor {
+  width: 100%;
+
+  background: var(--default-background-main);
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+/* MODAL */
+
+#modalAlbum {
+  font-size: 15px;
+}
+
+#modal-name {
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#modal-image {
+  background-color: var(--default-color-dark-background);
+  aspect-ratio: 1 / 1;
+
+  width: 30%;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: inset 2px var(--default-background-main);
+
+  float: left;
+  
+  background-color: var(--default-color-dark-background);
+  background-image: url("../assets/images/musica/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+#modal-description {
+  white-space: pre-line;
+}
+
+.btn-download-musica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background-color: var(--default-background-main) !important;
+  border: none !important;
+}
+
+.btn-download-musica:hover {
+  background-color: var(--button-download-hover) !important;
+}
+
+.img-descargar-musica {
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+}
+
+/* DOCUMENTAL */
+
+#documental {
+  color: var(--default-background-color);
+  background-color: var(--default-font-color);
+
+  padding-left: 100px;
+  padding-right: 100px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.documental-info {
+  font-size: 15px;
+  text-align: justify;
+}
+
+#carousel-documental {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.align-carousel-items {
+  display: grid !important;
+  place-items: center !important;
+}
+
+.card-video {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 450px;
+  background-color: var(--default-background-color);
+  color: var(--default-background-main);
+
+  border-radius: 15px;
+  border: inset 3px var(--default-background-main);
+
+  background-color: var(--default-color-dark-background);
+  background-image: url("../assets/images/musica/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15%;
+}
+
+.info-card-video {
+  font-size: 15px;
+  padding-left: 20px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.documental-video {
+  height: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.carousel-control-prev {
+  z-index: 0 !important;
+
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.carousel-control-next {
+  z-index: 0 !important;
+
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='olivedrab' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='olivedrab' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.img-descargar-documental {
+  width: 25px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.btn-download-documental {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  background-color: var(--default-background-main) !important;
+  border: none !important;
+}
+
+.btn-download-documental:hover {
+  background-color: var(--button-download-hover) !important;
+}
+
+/* FOOTER */
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 56px;
+
+  background-color: var(--default-color-dark-background);
+  color: var(--default-font-color);
+}
