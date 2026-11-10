@@ -93,6 +93,7 @@
   .presentacion-img-gif {
     position: absolute;
     height: calc(100vh - 50px - 50px) !important;
+    background-image: url("../assets/images/presentacion/presentacion-mobile.jpeg") !important;
   }
 
   #titulo-presentacion{    
@@ -172,7 +173,7 @@
 
     padding-left: 10px !important;
     padding-right: 10px !important;
-    padding-top: 25px !important;
+    padding-top: 0px !important;
     padding-bottom: 60px !important;
     
   }
@@ -306,7 +307,7 @@
     padding-left: 50px !important;
     padding-right: 50px !important;
 
-    padding-top: 30px !important;
+    padding-top: 0px !important;
     padding-bottom: 10px !important;
   }
 
@@ -426,11 +427,12 @@ body {
 
   background-image: url("../assets/images/presentacion/presentacion.jpeg");
   background-size: cover;
-  background-position: 0% 18%;
 }
+
 
 #titulo-presentacion {
   height: calc(100vh - 50px);
+  padding-top: 30px;
 }
 
 .presentacion-img-gif {
@@ -825,7 +827,7 @@ body {
   padding-left: 100px;
   padding-right: 100px;
 
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
