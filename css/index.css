@@ -88,12 +88,17 @@
 
   #presentacion {
     height: calc(100vh - 50px - 50px) !important;
+    background-image: url("../assets/images/presentacion/presentacion-mobile.jpeg") !important;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Opcional: hace que la imagen cubra todo el contenedor */
   }
 
   .presentacion-img-gif {
     position: absolute;
     height: calc(100vh - 50px - 50px) !important;
-    background-image: url("../assets/images/presentacion/presentacion-mobile.jpeg") !important;
+
   }
 
   #titulo-presentacion{    
@@ -425,10 +430,11 @@ body {
 #presentacion {
   height: calc(100vh - 50px);
 
+
+
   background-image: url("../assets/images/presentacion/presentacion.jpeg");
   background-size: cover;
 }
-
 
 #titulo-presentacion {
   height: calc(100vh - 50px);
