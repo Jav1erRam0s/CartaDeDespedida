@@ -80,14 +80,19 @@
   /* NAVBAR */
 
   #navbar {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
   }
 
   /* PRESENTACION */
 
   #presentacion {
-    height: calc(100vh - 150px - 56px - 56px) !important;
+    height: calc(100vh - 50px);
+  }
+
+  .presentacion-img-gif {
+    position: absolute;
+    height: calc(100vh - 50px);
   }
 
   .poesia {
@@ -160,11 +165,12 @@
   /* DOCUMENTAL */
 
   #documental {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
 
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 25px !important;
+    padding-bottom: 60px !important;
+    
   }
 
   .documental-info {
@@ -223,6 +229,11 @@
   }
 
   /* PRESENTACION */
+  
+  .presentacion-img-gif {
+    position: absolute;
+    height: calc(100vh - 50px);
+  }
 
   .poesia {
     font-size: 13px !important;
@@ -291,8 +302,8 @@
     padding-left: 50px !important;
     padding-right: 50px !important;
 
-    padding-top: 15px !important;
-    padding-bottom: 15px !important;
+    padding-top: 30px !important;
+    padding-bottom: 10px !important;
   }
 
   .documental-info {
@@ -418,6 +429,11 @@ body {
   height: calc(100vh - 50px);
 }
 
+.presentacion-img-gif {
+  position: absolute;
+  height: calc(100vh - 50px);
+}
+
 .poesia {
   color: var(--default-font-color);
   font-size: 14px;
@@ -526,6 +542,7 @@ body {
 }
 
 /* MUSICA */
+
 
 #musica {
   background-color: var(--default-background-color);
@@ -804,7 +821,7 @@ body {
   padding-left: 100px;
   padding-right: 100px;
 
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -850,6 +867,7 @@ body {
 
 .documental-video {
   height: 100%;
+  width: 100%;
   padding: 2px;
   background-color: black;
   border-top-left-radius: inherit;
