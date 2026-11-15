@@ -177,7 +177,7 @@
   /* DOCUMENTAL */
 
   .galeria-img {
-    height: 300px !important;;
+    height: 300px !important;
     width: auto;
   }
 
@@ -888,6 +888,7 @@ body {
   border-radius: 15px;
   border: solid 3px var(--default-background-main);
   width: 100%;
+  overflow: hidden;
 
   background-color: var(--default-color-dark-background);
 }
