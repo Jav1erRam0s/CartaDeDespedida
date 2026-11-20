@@ -73,6 +73,13 @@
   font-style: italic;
 }
 
+.playwrite-au-sa-guides-regular {
+  font-family: "Playwrite AU SA Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px !important;
+}
+
 /* ************************************************** */
 /* MEDIA QUERIES */
 /* ************************************************** */
