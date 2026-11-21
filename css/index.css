@@ -107,7 +107,6 @@
   .presentacion-img-gif {
     position: absolute;
     height: calc(100vh - 50px - 50px) !important;
-
   }
 
   #titulo-presentacion{    
@@ -463,6 +462,12 @@ body {
 .presentacion-img-gif {
   position: absolute;
   height: calc(100vh - 50px);
+}
+
+.galeria-img-gif {
+  position: absolute;
+  height: 100% !important;
+  width: auto !important;
 }
 
 .poesia {
